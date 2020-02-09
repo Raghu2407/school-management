@@ -18,11 +18,8 @@ $(document).ready(function () {
         scrollOfffset: 10,
     });
     $('.sidenav').sidenav();
+    $('.tabs').tabs();
 });
-
-
-
-
 
 $('.slider').owlCarousel({
     items: 3,
@@ -61,7 +58,7 @@ $('.stop').on('click', function () {
 })
 
 $("#typed").typed({
-    strings: ["Prakalpa<span class='blue-text text-darken-4'>S</span>anika Infotech."],
+    strings: ["VPS<span class='blue-text text-darken-4'> B.Ed</span> College Ramdurg."],
     typeSpeed: 200,
     startDelay: 0,
     // backSpeed: 0,

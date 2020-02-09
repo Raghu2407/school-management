@@ -3,22 +3,216 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Galada&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/materialize.min.css" />
+    <link rel="stylesheet" href="css/raghu.css" />
     <title>Document</title>
+    <style>
+      .tabs .indicator {
+        position: absolute;
+        bottom: 0;
+        height: 2px;
+        background-color: #3f51b5;
+        will-change: left, right;
+      }
+      .tabs .tab a {
+        color: #3f51b5;
+      }
+      .goal {
+        font-family: "Galada", cursive;
+      }
+    </style>
   </head>
-  <body>
+  <body class="blue-grey lighten-4">
     <header>
-      <nav></nav>
+      <div class="top-indicator">
+        <div class="progress-container">
+          <div class="progress-bar" id="myBar"></div>
+        </div>
+      </div>
+      <nav class="white">
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo"
+            >&nbsp;<img
+              class="responsive-img"
+              width="300px;"
+              src="http://vpsbedramdurg.co.in/images/logo.png"
+          /></a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+            ><i class="material-icons">menu</i></a
+          >
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#infrastructure">Infrastructure</a></li>
+            <li><a href="#contact">Contact US</a></li>
+          </ul>
+        </div>
+        <ul class="sidenav" id="mobile">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About us</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#infrastructure">Infrastructure</a></li>
+          <li><a href="#contact">Contact US</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-      <section>
+      <section class="sections scrollspy" id="home">
+        <!-- add carousel -->
+        <div class="carousel carousel-slider ">
+          <a class="carousel-item  white-text " href="#one!">
+            <div class="tint"></div>
+            <img class="" src="images/mainslide1.jpg" />
+          </a>
+          <div class="carousel-fixed-item center type-wrap">
+            <h3
+              id="typed"
+              class="white-text about prakalpa-header hello typed "
+            >
+              <span class="blue-text">V</span>PS<span class="prakalpa-header"
+                >S</span
+              >B.Ed COllege Ramdurg
+            </h3>
+            <!-- <p class="white-text">
+                  
+                </p> -->
+
+            <div class="arrow bounce scrollspy">
+              <a class="fa fa-arrow-down fa-2x scrollspy" href="#about"
+                ><i class="material-icons large">keyboard_arrow_down</i></a
+              >
+            </div>
+          </div>
+
+          <a class="carousel-item " href="#two!">
+            <img src="images/mainsllide2.jpg" />
+          </a>
+
+          <a class="carousel-item " href="#three!">
+            <img src="images/mainslide3.jpg" />
+          </a>
+        </div>
+      </section>
+      <section class="section white scrollspy" id="about">
         <div class="row">
           <div class="col s12 m12 l12">
-            <h5>School Management</h5>
+            <h3 class="about center">
+              About <span class="lighter-text">Us</span>
+            </h3>
+          </div>
+          <div class="col s12 m12 l10 offset-l1">
+            <div class="col s12 m12 l12 center-align">
+              <img src="http://vpsbedramdurg.co.in/images/slide1.jpg" />
+            </div>
+            <p>
+              Our college of education, a premier institutions affiliated to
+              Rani Chennamma University Belagavi, was started to provide
+              professional education to youths of this region with 100 students.
+              As time rolled down, the members of managements with great zeal
+              and aspirations took a brave steps and started college of
+              education in 2004.
+            </p>
+
+            <div class="col s12">
+              <ul class="tabs">
+                <li class="tab col s3">
+                  <a href="#test1">VPS B.ED COLLEGE, RAMDURG</a>
+                </li>
+                <li class="tab col s3">
+                  <a class="active" href="#test2"
+                    >We Counsel, we Guide and we Teach.</a
+                  >
+                </li>
+                <li class="tab col s3">
+                  <a href="#test3">Principal's Message</a>
+                </li>
+                <li class="tab col s3">
+                  <a href="#test4">Our Vision & Mission</a>
+                </li>
+              </ul>
+            </div>
+            <div id="test1" class="col s12">
+              <p class="grey-text">
+                Our team at VPS B.ED COLLEGE, RAMDURG Educations firmly believes
+                in values,<br />
+                virtues and we respect your desires and dreams. We try our level
+                best to make you acheive your educational goals and be a<br />
+                part of your success..
+              </p>
+            </div>
+            <div id="test2" class="col s12">
+              We are a team of professionals who have made a remarkable mark in
+              the education industry. Having vast experienced in the<br />
+              field of education, we understand your needs and requirements and
+              have the ability to counsel you with a professional advice<br />
+              and guide you through the best available course and university..
+            </div>
+            <div id="test3" class="col s12">
+              Let us as Educationists work together enthusiastically in
+              developing our students as enterprising teachers with<br />
+              futuristic vision. Our endeavor is to develop leaders, managers
+              and responsible citizens for the country
+            </div>
+            <div id="test4" class="col s12">
+              Education for the Life of the World.To impart Liberating,
+              Inspiring, Formative,<br />
+              Empowering Education.To be a premier institution that offers
+              distinctive teacher education to develop humane and progressive
+              professionals.
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section grey lighten-4">
+        <div class="row">
+          <div class="col s12 m12 l12 center">
+            <h3 class="about">Our Goal</h3>
+          </div>
+          <div class="col s12 m3 l3">
+            <div class="card grey lighten-4">
+              <div class="card-image">
+                <img
+                  class="responsive-img"
+                  width="200px"
+                  src="https://i.dlpng.com/static/png/1769269-goal-download-png-goal-png-1600_1600_preview.webp"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m8 l8">
+            <h4 class="goal blue-grey-text">
+              "To inculcate values, civic responsibilities among student
+              community for peace and harmony in the society and the nation at
+              large. To provide student teachers an appropriate learning
+              environment that enables them to achieve excellence in teaching
+              profession. To train teachers who strive for shaping the
+              personality of children for future generation"
+            </h4>
           </div>
         </div>
       </section>
     </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkEq_D3fMPXae93yBN8oCXg31qoZccorI&libraries=places&callback=initMap"
+      type="text/javascript"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/maps.js"></script>
   </body>
 </html>
