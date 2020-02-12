@@ -19,6 +19,7 @@ $(document).ready(function () {
     });
     $('.sidenav').sidenav();
     $('.tabs').tabs();
+    $('.materialboxed').materialbox();
 });
 
 $('.slider').owlCarousel({
